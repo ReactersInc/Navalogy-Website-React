@@ -53,7 +53,7 @@ import kunal from '../images/members/kunal.png'
 import n_medhi from '../images/members/medhi-sir.png'
 import prabhat from '../images/members/prabhat.png'
 import pratik from '../images/members/pratik.png'
-import ptirindra from '../images/members/pritindra.png'
+import pritrindra from '../images/members/pritindra.png'
 import priyanka from '../images/members/priyanka.png'
 import rajdeep from '../images/members/rajdeep.png'
 import tanushree from '../images/members/tanushree.png'
@@ -126,7 +126,7 @@ const IMAGES = {
     n_medhi,
     prabhat,
     pratik,
-    ptirindra,
+    pritrindra,
     priyanka,
     rajdeep,
     tanushree,
