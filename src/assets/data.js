@@ -443,8 +443,8 @@ const members = {
         },
 
         // Name : Kumarjit Ray
-        4: {
-            id: 4,
+        3: {
+            id: 3,
             img: IMAGES.kumarjit,
             name: "Kumarjit Ray",
             role: "PhD Scholar | IIT Kharagpur | Former Asst. Prof. Siksha O Anusandhan",
@@ -457,10 +457,9 @@ const members = {
             ],
         },
 
-
         //Name : Pratik Chanda
-        5: {
-            id: 5,
+        4: {
+            id: 4,
             img: IMAGES.pratik,
             name: "Pratik Chanda",
             role: "B.tech 4th Year EE| Tezpur University",
@@ -474,8 +473,8 @@ const members = {
         },
 
         // Name : Pritindra Das
-        6: {
-            id: 6,
+        5: {
+            id: 5,
             img: IMAGES.pritindra,
             name: "Pritindra Das",
             role: "B. tech 4th Year CSE | Tezpur University",
@@ -486,8 +485,8 @@ const members = {
         },
 
         // Name : Rajdeep Ghosh
-        7: {
-            id: 7,
+        6: {
+            id: 6,
             img: IMAGES.rajdeep,
             name: "Rajdeep Ghosh",
             role: "MTech CSE | Calcutta University",
@@ -501,8 +500,8 @@ const members = {
         },
 
         // Name : Tridib Lochan Dutta
-        8: {
-            id: 8,
+        7: {
+            id: 7,
             img: IMAGES.tridib,
             name: "Tridib Lochan Dutta",
             role: "B. tech 3rd Year ECE | Tezpur University",
@@ -513,8 +512,8 @@ const members = {
         },
 
         // Name : Vicky Deka
-        9: {
-            id: 9,
+        8: {
+            id: 8,
             img: IMAGES.vicky,
             name: "Vicky Deka",
             role: "B. tech 4th Year CSE | Tezpur University",
@@ -523,7 +522,6 @@ const members = {
                 { url: "https://in.linkedin.com/in/vickydeka", icon: ICONS.linkedln_2 },
             ]
         },
-
 
     },
 
@@ -606,6 +604,7 @@ const members = {
 
     },
 };
+
 
 
 

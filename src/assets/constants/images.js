@@ -41,7 +41,7 @@ import about_us_2 from '../gif/about-us-2.json'
 import aditya from '../images/members/adittya.png'
 import antara from '../images/members/antara.png'
 import arindom from '../images/members/arindom.png'
-import bhargav from '../images/members/bhargav.png'
+import bhargab from '../images/members/bhargab.png'
 import birlang from '../images/members/birlang.png'
 import chandrima from '../images/members/chandrima.png'
 import debangee from '../images/members/debangee.png'
@@ -53,7 +53,7 @@ import kunal from '../images/members/kunal.png'
 import n_medhi from '../images/members/medhi-sir.png'
 import prabhat from '../images/members/prabhat.png'
 import pratik from '../images/members/pratik.png'
-import pritrindra from '../images/members/pritindra.png'
+import pritindra from '../images/members/pritindra.png'
 import priyanka from '../images/members/priyanka.png'
 import rajdeep from '../images/members/rajdeep.png'
 import tanushree from '../images/members/tanushree.png'
@@ -114,7 +114,7 @@ const IMAGES = {
     aditya,
     antara,
     arindom,
-    bhargav,
+    bhargab,
     birlang,
     chandrima,
     debangee,
@@ -126,7 +126,7 @@ const IMAGES = {
     n_medhi,
     prabhat,
     pratik,
-    pritrindra,
+    pritindra,
     priyanka,
     rajdeep,
     tanushree,
