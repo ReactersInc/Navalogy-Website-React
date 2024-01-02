@@ -1,0 +1,173 @@
+#memberPageContent {
+  margin: 4rem auto;
+  position: relative;
+  z-index: 1;
+  height: 800px;
+}
+
+.memberPageContentImage {
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  transform: rotate(200deg);
+}
+
+#waveImg2 {
+  bottom: -50px;
+  filter: blur(20px);
+}
+
+#centerContent {
+  margin: 0 auto;
+  width: 85vw;
+  /* height: 800px; */
+  height: 100%;
+  max-width: 800px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#memberControls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#leftChivron,
+#rightChivron {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+#leftChivron img,
+#rightChivron img {
+  object-fit: contain;
+}
+
+#leftChivron:hover,
+#rightChivron:hover {
+  background: var(--borderColor);
+}
+
+#leftChivron {
+  transform: rotate(-90deg);
+}
+
+#rightChivron {
+  transform: rotate(90deg);
+}
+
+.member {
+  width: 700px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+
+.member.activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.member.lastSlide {
+  transform: translateX(-100%);
+}
+
+.member.nextSlide {
+  transform: translateX(100%);
+}
+
+
+#memberSelectionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto 4rem;
+  max-width: 1000px;
+  width: 90%;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 950px) {
+  #memberPageContent {
+    height: 650px;
+  }
+
+  #centerContent {
+    width: 90vw;
+  }
+
+  .member {
+    width: 570px;
+    padding-bottom: 9rem;
+  }
+
+  .memberPageContentImage {
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .member {
+    width: 80%;
+    padding-bottom: 8rem;
+  }
+
+  #memberPageContent {
+    height: 550px;
+  }
+
+}
+
+@media screen and (max-width: 660px) {
+  #centerContent {
+    width: 90vw;
+  }
+
+  #leftChivron,
+  #rightChivron {
+    bottom: 0;
+  }
+
+  .member {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .member {
+    width: 90%;
+  }
+
+  #memberControls {
+    width: fit-content;
+    left: 50%;
+    gap: 2rem;
+    bottom: 0;
+    height: fit-content;
+    transform: translate(-50%, 200px);
+  }
+}

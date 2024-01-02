@@ -1,0 +1,13 @@
+#publicationpageContent{
+    margin: 12rem auto 5rem;
+}
+
+.yearContainer{
+    margin-bottom: 5rem;
+}
+
+@media screen and (max-width : 980px){
+    #publicationpageContent{
+        margin: 5rem auto 5rem;
+    }
+}

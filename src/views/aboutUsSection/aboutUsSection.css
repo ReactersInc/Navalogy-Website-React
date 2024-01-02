@@ -1,0 +1,90 @@
+#aboutUsSection{
+    width: 80vw;
+    margin: 10rem auto 4rem;
+    padding: 1rem 0;
+    display: flex;
+    align-items: flex-end;
+    gap: 5rem;
+    justify-content: space-between;
+    position: relative;
+}
+
+#aboutUsSection .right{
+    width: 450px;
+    height: fit-content;
+    
+}
+
+#aboutUsSection .left{
+    width: 50%;
+    min-width: 400px;
+}
+
+
+#aboutUsSection .heading{
+    font-size: 2.3rem;
+}
+
+.heading span{
+    margin-right: .7rem;
+    background: linear-gradient(45deg, #F3D6E0 0%, #7363FD 100%);
+    color: transparent; /* Make text transparent */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    background-clip: text;
+    font-weight: 500;
+    font-size: clamp(2rem, 2.5vw, 3rem);
+}
+
+span img{
+    width : clamp(2rem, 2.5vw, 3rem);
+}
+
+.text1, .text2{
+    margin-top: 2rem;
+}
+
+.text p{
+    margin-bottom: .7rem;
+    font-size: clamp(0.9rem, 1vw, 1rem);
+}
+
+
+@media screen and (max-width: 950px){
+    #aboutUsSection{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    #aboutUsSection .left{
+        width: 100%;
+        min-width: 100%;
+        text-align: center;
+    }
+
+    #large{
+        top: 40% !important;
+    }
+
+    #medium{
+        bottom: 10% !important;
+        left: 10% !important;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #aboutUsSection{
+        margin: 8rem auto 4rem;
+    }
+
+    #aboutUsSection .right{
+        width: 350px;
+        margin-top: -40px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #aboutUsSection{
+        margin: 6rem auto 4rem;
+    }
+}

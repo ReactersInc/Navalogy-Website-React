@@ -1,0 +1,90 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    --primary: #806DF3;
+    --secondary: #EEF3F9;
+    --tertiary: #F1F6FF;
+
+    --dark: #1a1a1a;
+    --light: #FFFFFF;
+
+    /* others */
+    --borderColor: #DBDBDB;
+    --dropShadow: #9599F0;
+
+
+    /* Sliders */
+    --color-slider1: #FF8D01;
+    --color-slider2: #806DF3;
+    --color-slider3: #A68676;
+    --color-slider4: #4E684B;
+    --color-slider5: #0076B2;
+
+    /* breakpoints */
+    --smallMobile: 480px;
+    --mobile: 768px;
+    --tablet: 950px;
+    --desktop: 1200px;
+
+    --primary-linear-gradient: linear-gradient(90deg, #F3D6E0 0%, #7363FD 100%);
+    --button-gradient :linear-gradient(137deg, #F3D6E0 18.74%, rgba(115, 99, 253) 138.5%);
+
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-weight: 500;
+    text-decoration: inherit;
+}
+
+.center{
+    display: block;
+    width: fit-content;
+    margin: 1rem auto
+}
+
+body {  
+    min-width: 320px;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+button {
+    border: 1px solid transparent;
+    font-size: clamp(.8rem, 1.5vw, 1.2rem);
+    padding-top: clamp(.3rem, 1.5vw, .8rem);
+    padding-bottom: clamp(.3rem, 1.5vw, .8rem);
+    padding-left: clamp(.8rem, 1.5vw, 1.3rem);
+    padding-right: clamp(.8rem, 1.5vw, 1.3rem);
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+button:hover {
+    border-color: #646cff;
+}
+
+
+.btnSelectionContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto 4rem;
+    max-width: 1000px;
+    width: 90%;
+    gap: 2rem;
+    flex-wrap: wrap;
+}

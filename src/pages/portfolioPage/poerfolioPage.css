@@ -1,0 +1,185 @@
+#portfolioPage {
+    position: relative;
+}
+
+.projectContainer {
+    width: 90%;
+    margin: 4rem auto;
+    background-color: var(--light);
+    padding-top: 2rem;
+    position: relative;
+    z-index: 0;
+}
+
+#projectDescriptions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin: 4rem auto 15rem;
+    grid-template-areas:
+        "desc1 img3 desc2"
+        "img1 empty img2"
+        "desc3 img4 desc4"
+    ;
+
+}
+
+.desc {
+    max-width: 300px;
+    align-self: center;
+}
+
+.desc h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+
+}
+
+.descImage {
+    width: min(400px, 100%);
+    height: 300px;
+    background-color: #f2f0f2;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 8px;
+}
+
+.descImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.wave {
+    width: 100%;
+    height: 600px;
+    /* object-fit: cover; */
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+.desc-1 {
+    grid-area: desc1;
+}
+
+.desc-2 {
+    grid-area: desc2;
+    justify-self: end;
+}
+
+.desc-3 {
+    grid-area: desc3;
+}
+
+.desc-4 {
+    grid-area: desc4;
+    justify-self: end;
+}
+
+.descImage-1 {
+    grid-area: img1;
+}
+
+.descImage-2 {
+    grid-area: img2;
+}
+
+.descImage-3 {
+    grid-area: img3;
+}
+
+.descImage-4 {
+    grid-area: img4;
+
+}
+
+#grid1, #grid2, #grid3, #grid4 {
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: -2;
+    transform: scale(.9);
+    transform: rotate(180deg);
+}
+
+
+
+#portfolioGrids {
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+
+@media screen and (max-width: 1600px) {
+
+    #portfolioGrids #grid2 {
+        transform: scale(.9) translateY(-30.2%);
+    }
+}
+
+@media screen and (max-width: 1350px) {
+
+    #projectDescriptions {
+        margin-bottom: 5rem;
+    }
+
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    .desc {
+        max-width: 250px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 950px) {
+    #projectDescriptions {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem 1rem;
+        grid-template-areas:
+            "desc1 img1"
+            "img2 desc2"
+            "desc3 img3"
+            "img4 desc4";
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .projectContainer {
+        margin: 0rem auto;
+    }
+
+    #projectDescriptions {
+        grid-template-columns: 1fr;
+        grid-gap: 2rem 1rem;
+        place-items: center;
+        grid-template-areas:
+            "desc1"
+            "img1"
+            "desc2"
+            "img2"
+            "desc3"
+            "img3"
+            "desc4"
+            "img4";
+    }
+
+    .desc{
+        max-width: 300px;
+        justify-self: center;
+        text-align: center;
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid var(--borderColor);
+    }
+}
