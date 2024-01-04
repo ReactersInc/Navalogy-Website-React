@@ -190,13 +190,26 @@
     .info1{
         width: 50%;
     }
-
-
-
 }
 
 @media screen and (max-width : 500px){
     #socialContainer h3{
         font-size: 1rem
+    }
+
+    #footerLinks .navLink{
+        font-size: 1rem;
+    }
+
+    #footerLinks{
+        align-items: flex-end;
+    }
+
+
+}
+
+@media screen and (max-width : 370px) {
+    #socialContainer h3{
+        margin: 0;
     }
 }
