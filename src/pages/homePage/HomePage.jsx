@@ -18,11 +18,12 @@ const HomePage = () => {
           }}
         />
 
-        <Link to = "#" className="center" >
-          <Button
-            text="Dive Deeper"
-          />
-        </Link>
+          <a href="#portfolioSection" className="center">
+            <Button text="Dive Deeper" />
+          </a>
+
+        {/* <Link to = "#portfolioSection" className="center" > */}
+        {/* </Link> */}
 
 
       </div>

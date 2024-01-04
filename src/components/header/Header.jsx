@@ -24,7 +24,7 @@ const Header = () => {
             <NavLink to="/publication" className="navLink" activeclassname="active" exact = 'true' >Publications</NavLink>
         </div>
 
-        <div className="btnContainer">
+        <div className="btnContainer" /*style={{visibility : 'hidden'}}*/>
             <Link to = "#" className="btnLink">
                 <Button text="Get Started"/>
             </Link>
