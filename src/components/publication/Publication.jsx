@@ -5,6 +5,14 @@ import './publication.css'
 const Publication = ({ icon, publicationTitle, publicationSubTitle, publicationDescription, publicationLink, publicationDate }) => {
 
     const [show, setShow] = useState(false)
+    const [winWidth, setWinWidth] = useState(window.innerWidth);
+
+    const handleResize = () => {
+        setWinWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
     const rotateStyle = show ? { transform: 'rotate(180deg)' } : {};
 
 
@@ -22,7 +30,7 @@ const Publication = ({ icon, publicationTitle, publicationSubTitle, publicationD
                             <div className='publicationTitle'>{publicationTitle}</div>
                             <div className="publicationSubTitle">
                                 <span>{publicationSubTitle}</span>
-                                |
+                                {winWidth >= 480 && <span> | </span>}
                                 <span>{publicationDate}</span>
                             </div>
                         </div>
@@ -30,15 +38,15 @@ const Publication = ({ icon, publicationTitle, publicationSubTitle, publicationD
                         <img src={ICONS.chevronUnFilled} alt="chevron" className='chevron' style={rotateStyle} />
                     </div>
 
-                    {show && 
-                        <div 
-                            className='publicationDescription' 
+                    {show &&
+                        <div
+                            className='publicationDescription'
                             style={{ maxHeight: show ? '500px' : '0' }} >
-                                <p>
-                                    {publicationDescription}
-                                    <a href={publicationLink} target='_blank' rel="noreferrer">Read More</a>
-                                </p>
-                                
+                            <p>
+                                {publicationDescription}
+                                <a href={publicationLink} target='_blank' rel="noreferrer">Read More</a>
+                            </p>
+
                         </div>
                     }
                 </div>

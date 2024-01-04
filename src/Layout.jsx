@@ -12,8 +12,8 @@ const Layout = () => {
     // console.log('Use Effect Called from Layout');
 
     const updatePosition = (e) => {
-      cursorDiv.style.top = e.pageY + 'px';
-      cursorDiv.style.left = e.pageX + 'px';
+      cursorDiv.style.top = e?.pageY + 'px';
+      cursorDiv.style.left = e?.pageX + 'px';
     };
 
     const handleResize = () => {
