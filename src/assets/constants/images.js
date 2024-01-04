@@ -48,17 +48,21 @@ import debangee from '../images/members/debangee.png'
 import deekshith from '../images/members/deekshith.png'
 import dibya from '../images/members/dibya.png'
 import dilwar from '../images/members/dilwar.png'
+import dhritideepa from '../images/members/dhritideepa.png'
 import kumarjit from '../images/members/kumarjit.png'
 import kunal from '../images/members/kunal.png'
 import n_medhi from '../images/members/medhi-sir.png'
 import prabhat from '../images/members/prabhat.png'
 import pratik from '../images/members/pratik.png'
+import praptipriya from '../images/members/praptipriya.png'
 import pritindra from '../images/members/pritindra.png'
+import rajveer from '../images/members/rajveer.png'
 import priyanka from '../images/members/priyanka.png'
 import rajdeep from '../images/members/rajdeep.png'
 import tanushree from '../images/members/tanushree.png'
 import tridib from '../images/members/tridib.png'
 import vicky from '../images/members/vicky.png'
+import vivek from '../images/members/vivek.png'
 
 
 import member_1 from '../images/members/member-1.png'
@@ -121,17 +125,22 @@ const IMAGES = {
     deekshith,
     dibya,
     dilwar,
+    dhritideepa,
     kumarjit,
     kunal,
     n_medhi,
     prabhat,
+    praptipriya,
     pratik,
     pritindra,
     priyanka,
     rajdeep,
+    rajveer,
     tanushree,
     tridib,
     vicky,
+    vivek,
+
 
     member_1,
     member_2,

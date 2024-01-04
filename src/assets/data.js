@@ -329,7 +329,6 @@ const members = {
             ],
         },
 
-
     },
 
     foundingMembers: {
@@ -387,8 +386,8 @@ const members = {
             id: 4,
             img: IMAGES.rajdeep,
             name: "Rajdeep Ghosh",
-            role: "MTech CSE | Calcutta University",
-            bio: "Rajdeep Ghosh holds an MTech in Computer Science from Calcutta University and is celebrated as the Best Graduate of Tezpur University from the class of 2022. With a passion for excellence, Rajdeep brings a wealth of knowledge to the team.",
+            role: "M.Tech CSE | Calcutta University",
+            bio: "Rajdeep Ghosh holds an M.Tech in Computer Science from Calcutta University and is celebrated as the Best Graduate of Tezpur University from the class of 2022. With a passion for excellence, Rajdeep brings a wealth of knowledge to the team.",
             socialLinks: [
                 { url: "https://in.linkedin.com/in/rajdeep-ghosh-301082175", icon: ICONS.linkedln_2 }
             ]
@@ -402,7 +401,7 @@ const members = {
             id: 0,
             img: IMAGES.arindom,
             name: "Arindom Aich",
-            role: "B.tech 4th Year CSE | Tezpur University",
+            role: "B.Tech 4th Year CSE | Tezpur University",
             bio: "Arindom Aich, a dedicated fourth-year B.Tech CSE student at Tezpur University, combines academic prowess with a passion for technology. Positioned at the intersection of learning and innovation, Arindom is poised for impactful contributions in the field of computer science.",
             socialLinks: [
                 {
@@ -417,7 +416,7 @@ const members = {
             id: 1,
             img: IMAGES.bhargab,
             name: "Bhargab Pratim Nath",
-            role: "B.tech 3rd Year ECE | Tezpur University",
+            role: "B.Tech 3rd Year ECE | Tezpur University",
             bio: "Bhargab Pratim Nath, a third-year ECE student at Tezpur University, is passionate about electronics and communication engineering, combining academic excellence with a forward-looking approach.",
             socialLinks: [
                 {
@@ -432,7 +431,7 @@ const members = {
             id: 2,
             img: IMAGES.chandrima,
             name: "Chandrima Paul",
-            role: "B.tech 3rd Year CSE | Tezpur University",
+            role: "B.Tech 3rd Year CSE | Tezpur University",
             bio: "Chandrima Paul,  B.Tech student in the Department of Computer Science and Engineering, excels in Cloud Computing, NLP, and Cyber Security. With a strong skill set, she spearheads the design aspect of the society, showcasing expertise in implementing cutting-edge technologies.",
             socialLinks: [
                 {
@@ -442,9 +441,29 @@ const members = {
             ],
         },
 
-        // Name : Kumarjit Ray
+        // Name : Dhritideepa Sarania
         3: {
             id: 3,
+            img: IMAGES.dhritideepa,
+            name: "Dhritideepa Sarania",
+            role: "B.Tech 3rd Year CSE | Tezpur University",
+            bio: "Passionate Frontend Developer creating responsive web applications and Creative UX/UI Designer specializing in intuitive user-centric interfaces.",
+            socialLinks: [
+                { 
+                    url: "https://github.com/dee-sarania", 
+                    icon: ICONS.github
+                },
+                { 
+                    url: "https://www.linkedin.com/in/dhritideepa-sarania-761b40250", 
+                    icon: ICONS.linkedln_2 
+                },
+            ]
+        },
+
+
+        // Name : Kumarjit Ray
+        4: {
+            id: 4,
             img: IMAGES.kumarjit,
             name: "Kumarjit Ray",
             role: "PhD Scholar | IIT Kharagpur | Former Asst. Prof. Siksha O Anusandhan",
@@ -457,12 +476,27 @@ const members = {
             ],
         },
 
-        //Name : Pratik Chanda
-        4: {
-            id: 4,
+        // Name : PraptiPriya Phukon
+        5: {
+            id: 5,
+            img: IMAGES.praptipriya,
+            name: "PraptiPriya Phukon",
+            role: "B.Tech 3rd Year CSE | Tezpur University",
+            bio: "Versatile CSE undergrad skilled in React, computer networks, databases, and full-stack development. Dedicated to crafting innovative solutions and staying current with the latest tech trends. Eager to contribute and adapt to evolving challenges in the field.",
+            socialLinks: [
+                {
+                    url: "https://www.linkedin.com/in/praptipriya-phukon-07a83b223",
+                    icon: ICONS.linkedln_2,
+                },
+            ],
+        },
+
+        // Name : Pratik Chanda
+        6: {
+            id: 6,
             img: IMAGES.pratik,
             name: "Pratik Chanda",
-            role: "B.tech 4th Year EE| Tezpur University",
+            role: "B.Tech 4th Year EE | Tezpur University",
             bio: "Pratim Chanda, currently in the fourth year of his B.Tech in Electrical Engineering at Tezpur University, showcases a strong dedication to academic excellence and a passion for electrical systems. With a keen interest in exploring innovative solutions within the realm of electrical engineering, Pratim is poised to make valuable contributions to the field.",
             socialLinks: [
                 {
@@ -473,11 +507,11 @@ const members = {
         },
 
         // Name : Pritindra Das
-        5: {
-            id: 5,
+        7: {
+            id: 7,
             img: IMAGES.pritindra,
             name: "Pritindra Das",
-            role: "B. tech 4th Year CSE | Tezpur University",
+            role: "B.Tech 4th Year CSE | Tezpur University",
             bio: "Pritinda Das, a dynamic individual, holds a degree in B.Tech Computer Science and Engineering from Tezpur University. Armed with a solid foundation in CSE, Pritinda is well-prepared to navigate the tech industry, bringing a blend of academic excellence and practical skills to any professional endeavor.",
             socialLinks: [
                 { url: "https://in.linkedin.com/in/pritindra-das", icon: ICONS.linkedln_2 },
@@ -485,12 +519,12 @@ const members = {
         },
 
         // Name : Rajdeep Ghosh
-        6: {
-            id: 6,
+        8: {
+            id: 8,
             img: IMAGES.rajdeep,
             name: "Rajdeep Ghosh",
-            role: "MTech CSE | Calcutta University",
-            bio: "Rajdeep Ghosh holds an MTech in Computer Science from Calcutta University and is celebrated as the Best Graduate of Tezpur University from the class of 2022. With a passion for excellence, Rajdeep brings a wealth of knowledge to the team.",
+            role: "M.Tech CSE | Calcutta University",
+            bio: "Rajdeep Ghosh holds an M.Tech in Computer Science from Calcutta University and is celebrated as the Best Graduate of Tezpur University from the class of 2022. With a passion for excellence, Rajdeep brings a wealth of knowledge to the team.",
             socialLinks: [
                 {
                     url: "https://in.linkedin.com/in/rajdeep-ghosh-301082175",
@@ -499,12 +533,31 @@ const members = {
             ],
         },
 
+        // Name : Rajveer Chaudhary
+        9: {
+            id: 9,
+            img: IMAGES.rajveer,
+            name: "Rajveer Chaudhary",
+            role: "BTech CSE 3rd year | Tezpur University",
+            bio: "Rajveer Chaudhary is a seasoned full-stack developer, specializing in Angular. With proficiency in both frontend and backend technologies, he crafts high-quality, dynamic web applications that prioritize a seamless user experience. Committed to staying current with evolving web development trends, Rajveer ensures his solutions are at the forefront of industry standards.",
+            socialLinks: [
+                {
+                    url: "https://github.com/Rajveer6000",
+                    icon: ICONS.github,
+                },
+                {
+                    url: "https://www.linkedin.com/in/RajveerChoudhary/",
+                    icon: ICONS.linkedln_2,
+                },
+            ],
+        },
+
         // Name : Tridib Lochan Dutta
-        7: {
-            id: 7,
+        10: {
+            id: 10,
             img: IMAGES.tridib,
             name: "Tridib Lochan Dutta",
-            role: "B. tech 3rd Year ECE | Tezpur University",
+            role: "B.Tech 3rd Year ECE | Tezpur University",
             bio: "Tridib Lochan Dutta is a diligent B.Tech student at Tezpur University.",
             socialLinks: [
                 { url: "https://www.linkedin.com/in/tridib-lochan-dutta/", icon: ICONS.linkedln_2 },
@@ -512,14 +565,29 @@ const members = {
         },
 
         // Name : Vicky Deka
-        8: {
-            id: 8,
+        11: {
+            id: 11,
             img: IMAGES.vicky,
             name: "Vicky Deka",
-            role: "B. tech 4th Year CSE | Tezpur University",
+            role: "B.Tech 4th Year CSE | Tezpur University",
             bio: "Vicky Deka is a diligent B.Tech student at Tezpur University.",
             socialLinks: [
                 { url: "https://in.linkedin.com/in/vickydeka", icon: ICONS.linkedln_2 },
+            ]
+        },
+
+        // Name : Vivek
+        12: {
+            id: 12,
+            img: IMAGES.vivek,
+            name: "Vivek Rai",
+            role: "B.Tech 3rd Year CSE | Tezpur University",
+            bio: "Angular Full-stack developer creating dynamic, responsive web applications with a commitment to high-quality solutions.",
+            socialLinks: [
+                { 
+                    url: "https://github.com/vivekrai9900", 
+                    icon: ICONS.linkedln_2 
+                },
             ]
         },
 
@@ -531,7 +599,7 @@ const members = {
             id: 0,
             img: IMAGES.antara,
             name: "Antara Singhal",
-            role: "B.tech 4th Year CSE | Tezpur University",
+            role: "B.Tech 4th Year CSE | Tezpur University",
             bio: "Antara Singhal, a fourth-year B.Tech student specializing in Computer Science and Engineering at Tezpur University, combines a strong academic foundation with a fervor for technology. With a focus on innovation and problem-solving, Antara is well-positioned to make meaningful contributions to the ever-evolving field of computer science.",
             socialLinks: [
                 {
@@ -556,7 +624,7 @@ const members = {
             id: 2,
             img: IMAGES.deekshith,
             name: "Deekshith Kumar",
-            role: "B.tech 4th Year CSE | Tezpur University",
+            role: "B.Tech 4th Year CSE | Tezpur University",
             bio: "Deekshith Kumar, a fourth-year B.Tech student in Computer Science and Engineering at Tezpur University, brings a wealth of academic experience and technical acumen to the table. With a focus on innovation and problem-solving, Deekshith is dedicated to contributing valuable insights and solutions within the realm of computer science",
             socialLinks: [
                 {
@@ -570,7 +638,7 @@ const members = {
             id: 3,
             img: IMAGES.dibya,
             name: "Dibyaroop Das",
-            role: "B. tech 4th Year CSE | Tezpur University",
+            role: "B.Tech 4th Year CSE | Tezpur University",
             bio: "Dibyaroop Das is a diligent B.Tech student at Tezpur University.",
             socialLinks: [
                 { url: "https://in.linkedin.com/in/dibyaroop-das-8803a41a4", icon: ICONS.linkedln_2 },
@@ -592,7 +660,7 @@ const members = {
             id: 5,
             img: IMAGES.tanushree,
             name: "Tanushree Das",
-            role: "B.tech 4th Year CSE | Tezpur University",
+            role: "B.Tech 4th Year CSE | Tezpur University",
             bio: "Tanushree Das, a fourth-year B.Tech CSE student at Tezpur University, blends a robust academic background with a passion for technology and innovation, ready to make impactful contributions to the field.",
             socialLinks: [
                 {
