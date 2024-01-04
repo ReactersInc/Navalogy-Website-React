@@ -89,9 +89,6 @@ const ContactPage = () => {
             ...prevFocus,
             [name]: false
         }));
-
-        console.log('Form Data : ', formData)
-        console.log('Errors : ' , errors)
     };
 
     const handleSubmit = async (e) => {
@@ -99,7 +96,6 @@ const ContactPage = () => {
         let message = '';
         let submit = true;
 
-        console.log(formData)
 
         Object.keys(formData).forEach((key) => {
             if (formData[key] == '') {
@@ -123,7 +119,6 @@ const ContactPage = () => {
 
             let dataUrl = `?email=${formData.email}&name=${formData.name}&phoneNumber=${formData.phoneNumber}&timeToCall=${formData.timeToCall}`
 
-            console.log(url)
             // reset form data
             setFormData(initialFormData);
             setErrors(initialFormData);
@@ -133,17 +128,14 @@ const ContactPage = () => {
                 content : 'application/text'
 
             }).then(res => {
-                console.log(res)
                 return res.text()
             }).then(data => {
-                console.log('Recieved Data : \n', data)
                 if (data === 'success') {
                     toast.success('Message Sent Successfully')
                 } else {
                     toast.error('Message Not Sent')
                 }
             }).catch(err => {
-                console.log(err)
                 toast.error(err)
             })
         } else {

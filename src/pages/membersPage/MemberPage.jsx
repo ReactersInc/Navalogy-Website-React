@@ -93,7 +93,6 @@ const MemberPage = () => {
 
                         const img = member[personIndex]?.img || IMAGES.member_1;
 
-                        console.log(person)
 
                         let position = 'nextSlide';
                         if (personIndex === index) {

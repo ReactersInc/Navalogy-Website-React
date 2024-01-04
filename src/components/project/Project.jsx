@@ -12,9 +12,7 @@ const Project = ({ setProject, project, page }) => {
 
     useEffect(() => {
         if (page === 'portfolioPage') {
-            // console.log(page);
             setSelectedButton(() => {
-                // console.log(project.type);
                 return project.type;
             });
         }
