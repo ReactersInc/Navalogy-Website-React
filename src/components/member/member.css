@@ -193,3 +193,43 @@
     }
 
 }
+
+@media screen and (max-width : 400px) {
+
+    .capsule {
+        gap: 1rem;
+        height: 120px;
+    }
+
+    .memberLeft {
+        width: 100px;
+        height: 100px;
+    }
+
+}
+
+@media screen and (max-width : 370px) {
+
+    .capsule {
+        gap: 1rem;
+        grid-template-columns: 1fr;
+        height: fit-content;
+        place-items: center;
+        border-radius: 20px;
+    }
+
+    .memberLeft {
+        width: 100px;
+        height: 100px;
+    }
+
+    .memberRight{
+        border-radius: 0; 
+    }
+
+    .name, .role, .socialLinks{
+        margin: 0.5rem auto;
+        text-align: center;
+    }
+
+}

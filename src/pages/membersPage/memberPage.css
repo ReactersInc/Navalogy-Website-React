@@ -3,6 +3,7 @@
   position: relative;
   z-index: 1;
   height: 800px;
+  overflow: hidden;
 }
 
 .memberPageContentImage {
@@ -22,7 +23,6 @@
 #centerContent {
   margin: 0 auto;
   width: 85vw;
-  /* height: 800px; */
   height: 100%;
   max-width: 800px;
   position: relative;
@@ -170,4 +170,36 @@
     height: fit-content;
     transform: translate(-50%, 200px);
   }
+}
+
+@media screen and (max-width: 400px) {
+  .member {
+    padding-bottom: 5rem;
+  }
+  
+  #memberPageContent {
+    height: 400px;
+  }
+
+  #memberControls {
+    transform: translate(-50%, 150px);
+  }
+
+
+}
+
+@media screen and (max-width : 370px) {
+
+  #memberPageContent {
+    height: 500px;
+  }
+
+  #memberControls {
+    transform: translate(-50%, 200px);
+  }
+
+  .member{
+    padding-bottom: 12rem;
+  }
+
 }
