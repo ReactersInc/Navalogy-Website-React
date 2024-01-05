@@ -396,9 +396,24 @@ const members = {
 
     currentMembers: {
 
-        // Name : Arindom Aich
+        // Name : Antara Singhal
         0: {
             id: 0,
+            img: IMAGES.antara,
+            name: "Antara Singhal",
+            role: "B.Tech 4th Year CSE | Tezpur University",
+            bio: "Antara Singhal, a fourth-year B.Tech student specializing in Computer Science and Engineering at Tezpur University, combines a strong academic foundation with a fervor for technology. With a focus on innovation and problem-solving, Antara is well-positioned to make meaningful contributions to the ever-evolving field of computer science.",
+            socialLinks: [
+                {
+                    url: "https://www.linkedin.com/in/antara-singhal",
+                    icon: ICONS.linkedln_2,
+                },
+            ],
+        },
+
+        // Name : Arindom Aich
+        1: {
+            id: 1,
             img: IMAGES.arindom,
             name: "Arindom Aich",
             role: "B.Tech 4th Year CSE | Tezpur University",
@@ -412,8 +427,8 @@ const members = {
         },
 
         // Name : Bhargab Pratim Nath
-        1: {
-            id: 1,
+        2: {
+            id: 2,
             img: IMAGES.bhargab,
             name: "Bhargab Pratim Nath",
             role: "B.Tech 3rd Year ECE | Tezpur University",
@@ -427,8 +442,8 @@ const members = {
         },
 
         // Name : Chandrima Paul
-        2: {
-            id: 2,
+        3: {
+            id: 3,
             img: IMAGES.chandrima,
             name: "Chandrima Paul",
             role: "B.Tech 3rd Year CSE | Tezpur University",
@@ -442,8 +457,8 @@ const members = {
         },
 
         // Name : Dhritideepa Sarania
-        3: {
-            id: 3,
+        4: {
+            id: 4,
             img: IMAGES.dhritideepa,
             name: "Dhritideepa Sarania",
             role: "B.Tech 3rd Year CSE | Tezpur University",
@@ -460,10 +475,9 @@ const members = {
             ]
         },
 
-
         // Name : Kumarjit Ray
-        4: {
-            id: 4,
+        5: {
+            id: 5,
             img: IMAGES.kumarjit,
             name: "Kumarjit Ray",
             role: "PhD Scholar | IIT Kharagpur | Former Asst. Prof. Siksha O Anusandhan",
@@ -477,8 +491,8 @@ const members = {
         },
 
         // Name : PraptiPriya Phukon
-        5: {
-            id: 5,
+        6: {
+            id: 6,
             img: IMAGES.praptipriya,
             name: "PraptiPriya Phukon",
             role: "B.Tech 3rd Year CSE | Tezpur University",
@@ -492,8 +506,8 @@ const members = {
         },
 
         // Name : Pratik Chanda
-        6: {
-            id: 6,
+        7: {
+            id: 7,
             img: IMAGES.pratik,
             name: "Pratik Chanda",
             role: "B.Tech 4th Year EE | Tezpur University",
@@ -507,8 +521,8 @@ const members = {
         },
 
         // Name : Pritindra Das
-        7: {
-            id: 7,
+        8: {
+            id: 8,
             img: IMAGES.pritindra,
             name: "Pritindra Das",
             role: "B.Tech 4th Year CSE | Tezpur University",
@@ -519,8 +533,8 @@ const members = {
         },
 
         // Name : Rajdeep Ghosh
-        8: {
-            id: 8,
+        9: {
+            id: 9,
             img: IMAGES.rajdeep,
             name: "Rajdeep Ghosh",
             role: "M.Tech CSE | Calcutta University",
@@ -534,8 +548,8 @@ const members = {
         },
 
         // Name : Rajveer Chaudhary
-        9: {
-            id: 9,
+        10: {
+            id: 10,
             img: IMAGES.rajveer,
             name: "Rajveer Chaudhary",
             role: "BTech CSE 3rd year | Tezpur University",
@@ -552,9 +566,24 @@ const members = {
             ],
         },
 
+        // Name : Tanushree Das
+        11: {
+            id: 11,
+            img: IMAGES.tanushree,
+            name: "Tanushree Das",
+            role: "B.Tech 4th Year CSE | Tezpur University",
+            bio: "Tanushree Das, a fourth-year B.Tech CSE student at Tezpur University, blends a robust academic background with a passion for technology and innovation, ready to make impactful contributions to the field.",
+            socialLinks: [
+                {
+                    url: "https://www.linkedin.com/in/tanushree-das-80a927209",
+                    icon: ICONS.linkedln_2,
+                },
+            ],
+        },
+
         // Name : Tridib Lochan Dutta
-        10: {
-            id: 10,
+        12: {
+            id: 12,
             img: IMAGES.tridib,
             name: "Tridib Lochan Dutta",
             role: "B.Tech 3rd Year ECE | Tezpur University",
@@ -565,8 +594,8 @@ const members = {
         },
 
         // Name : Vicky Deka
-        11: {
-            id: 11,
+        13: {
+            id: 13,
             img: IMAGES.vicky,
             name: "Vicky Deka",
             role: "B.Tech 4th Year CSE | Tezpur University",
@@ -577,8 +606,8 @@ const members = {
         },
 
         // Name : Vivek
-        12: {
-            id: 12,
+        13: {
+            id: 13,
             img: IMAGES.vivek,
             name: "Vivek Rai",
             role: "B.Tech 3rd Year CSE | Tezpur University",
@@ -595,22 +624,9 @@ const members = {
 
     pastMembers: {
 
+        // Name : Debangee Goswami
         0: {
             id: 0,
-            img: IMAGES.antara,
-            name: "Antara Singhal",
-            role: "B.Tech 4th Year CSE | Tezpur University",
-            bio: "Antara Singhal, a fourth-year B.Tech student specializing in Computer Science and Engineering at Tezpur University, combines a strong academic foundation with a fervor for technology. With a focus on innovation and problem-solving, Antara is well-positioned to make meaningful contributions to the ever-evolving field of computer science.",
-            socialLinks: [
-                {
-                    url: "https://www.linkedin.com/in/antara-singhal",
-                    icon: ICONS.linkedln_2,
-                },
-            ],
-        },
-
-        1: {
-            id: 1,
             img: IMAGES.debangee,
             name: "Debangee Goswami",
             role: "B.Tech EE 4th Year | Tezpur University ",
@@ -620,8 +636,9 @@ const members = {
             ]
         },
 
-        2: {
-            id: 2,
+        // Name : Deekshith Kumar
+        1: {
+            id: 1,
             img: IMAGES.deekshith,
             name: "Deekshith Kumar",
             role: "B.Tech 4th Year CSE | Tezpur University",
@@ -634,8 +651,9 @@ const members = {
             ],
         },
 
-        3: {
-            id: 3,
+        // Name : Dibyaroop Das
+        2: {
+            id: 2,
             img: IMAGES.dibya,
             name: "Dibyaroop Das",
             role: "B.Tech 4th Year CSE | Tezpur University",
@@ -645,8 +663,9 @@ const members = {
             ]
         },
 
-        4: {
-            id: 4,
+        // Name : Prabhatangshu Phukan
+        3: {
+            id: 3,
             img: IMAGES.prabhat,
             name: "Prabhatangshu Phukan",
             role: "B.Tech EE 4th Year | Tezpur University ",
@@ -654,20 +673,6 @@ const members = {
             socialLinks: [
                 { url: "https://www.linkedin.com/in/prabhatangshu-phukan", icon: ICONS.linkedln_2 },
             ]
-        },
-
-        5: {
-            id: 5,
-            img: IMAGES.tanushree,
-            name: "Tanushree Das",
-            role: "B.Tech 4th Year CSE | Tezpur University",
-            bio: "Tanushree Das, a fourth-year B.Tech CSE student at Tezpur University, blends a robust academic background with a passion for technology and innovation, ready to make impactful contributions to the field.",
-            socialLinks: [
-                {
-                    url: "https://www.linkedin.com/in/tanushree-das-80a927209",
-                    icon: ICONS.linkedln_2,
-                },
-            ],
         },
 
     },
