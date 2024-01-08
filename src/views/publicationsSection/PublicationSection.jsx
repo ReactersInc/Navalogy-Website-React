@@ -4,6 +4,7 @@ import { Button, Glare, Publication, Title } from '../../components'
 import { IMAGES } from '../../assets'
 import './publicationSection.css'
 import { Link } from 'react-router-dom'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const PublicationSection = () => {
 
@@ -66,7 +67,7 @@ const PublicationSection = () => {
         />
       </Link>
 
-      <img src={IMAGES.wave_3} alt="" style={{ position: 'absolute', top: '100px', display: 'none' }} />
+      <LazyLoadImage src={IMAGES.wave_3} alt="" style={{ position: 'absolute', top: '100px', display: 'none' }} />
 
 
     </div>

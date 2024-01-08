@@ -65,10 +65,10 @@ const PortfolioPage = () => {
             </div>
 
             <div id='portfolioGrids'>
-                <img src={IMAGES.grids_large} alt="grid-large" id='grid1' />
-                <img src={IMAGES.grids_large} alt="grid-large" id='grid2' />
-                <img src={IMAGES.grids_large} alt="grid-large" id='grid3' />
-                <img src={IMAGES.grids_large} alt="grid-large" id='grid4' />
+                <LazyLoadImage src={IMAGES.grids_large} alt="grid-large" id='grid1' />
+                <LazyLoadImage src={IMAGES.grids_large} alt="grid-large" id='grid2' />
+                <LazyLoadImage src={IMAGES.grids_large} alt="grid-large" id='grid3' />
+                <LazyLoadImage src={IMAGES.grids_large} alt="grid-large" id='grid4' />
             </div>
         </div>
     )
