@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { ICONS, IMAGES } from "../../assets"
 import { members } from "../../assets/data"
 import { Button, HeroTitle, Member } from "../../components"
+import { LazyLoadImage } from "react-lazy-load-image-component"
 
 import './memberPage.css'
 
@@ -36,6 +37,7 @@ const MemberPage = () => {
         setMember(members[selectedMembers])
     }
 
+    const showControls = Object.keys(member).length > 1;
 
     return (
         <div id="memberPage">
@@ -119,23 +121,23 @@ const MemberPage = () => {
 
                     })}
 
+                    {showControls && (
+                        <div id="memberControls">
+                            <div id="leftChivron">
+                                <img src={ICONS.chevronUnFilled} alt="leftChivron" onClick={() => setIndex(index - 1)} />
+                            </div>
 
-
-                    <div id="memberControls">
-                        <div id="leftChivron">
-                            <img src={ICONS.chevronUnFilled} alt="leftChivron" onClick={() => setIndex(index - 1)} />
+                            <div id="rightChivron">
+                                <img src={ICONS.chevronUnFilled} alt="rightChivron" onClick={() => setIndex(index + 1)} />
+                            </div>
                         </div>
-
-                        <div id="rightChivron">
-                            <img src={ICONS.chevronUnFilled} alt="rightChivron" onClick={() => setIndex(index + 1)} />
-                        </div>
-                    </div>
-
+                    )}
 
                 </div>
 
-                <img className="memberPageContentImage" id="waveImg1" src={IMAGES.wave_3} alt="wave" />
-                <img className="memberPageContentImage" id="waveImg2" src={IMAGES.wave_3} alt="wave" />
+                <LazyLoadImage className="memberPageContentImage" id="waveImg1" src={IMAGES.wave_3} alt="wave" />
+                <LazyLoadImage className="memberPageContentImage" id="waveImg2" src={IMAGES.wave_3} alt="wave" />
+
             </div>
 
         </div>

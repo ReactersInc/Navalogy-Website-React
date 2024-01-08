@@ -5,6 +5,7 @@ import { Button, Glare } from '../index';
 import { Link } from 'react-router-dom';
 
 import './project.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Project = ({ setProject, project, page }) => {
 
@@ -129,7 +130,7 @@ const Project = ({ setProject, project, page }) => {
                 <div className="right">
 
                     <div className="projectImgContainer">
-                        <img src={projectImg} alt="projectImg" className='projectImg' />
+                        <LazyLoadImage src={projectImg} alt="projectImg" className='projectImg' />
                     </div>
                     <h2>{title}</h2>
 

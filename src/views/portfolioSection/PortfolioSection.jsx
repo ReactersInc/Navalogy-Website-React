@@ -4,15 +4,16 @@ import { useState } from 'react';
 import { projects } from '../../assets/data';
 
 import './portfolioSection.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 const PortfolioSection = () => {
 
   const [project, setProject] = useState(projects[0]);
 
   return (
     <div id='portfolioSection'>
-      <img src={IMAGES.wave_2} style={{ objectFit: 'cover'}}/>
+
+      <LazyLoadImage src={IMAGES.wave_2} style={{ objectFit: 'cover' }} />
       <div id='portfolioContainer'>
-        
         <Title
           title={{ emphasize: 'Innovation Showcase', remaining: '' }}
           subtitle='Unveiling Our Journey through Inspired Works.'
@@ -22,8 +23,7 @@ const PortfolioSection = () => {
           logo={ICONS.sun}
         />
 
-        <Project setProject={setProject} project= {project} page = 'homePage' />
-
+        <Project setProject={setProject} project={project} page='homePage' />
       </div>
 
     </div>

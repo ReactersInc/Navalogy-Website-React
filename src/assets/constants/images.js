@@ -59,6 +59,7 @@ import pritindra from '../images/members/pritindra.png'
 import rajveer from '../images/members/rajveer.png'
 import priyanka from '../images/members/priyanka.png'
 import rajdeep from '../images/members/rajdeep.png'
+import tanaya from '../images/members/tanaya.png'
 import tanushree from '../images/members/tanushree.png'
 import tridib from '../images/members/tridib.png'
 import vicky from '../images/members/vicky.png'
@@ -136,6 +137,7 @@ const IMAGES = {
     priyanka,
     rajdeep,
     rajveer,
+    tanaya,
     tanushree,
     tridib,
     vicky,

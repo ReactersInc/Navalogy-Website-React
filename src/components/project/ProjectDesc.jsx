@@ -22,6 +22,8 @@ const ProjectDesc = ({ title, desc, img, order }) => {
                 <p>{desc}</p>
             </div>
 
+        
+
             <div className="descImage">
                 <img src={img} alt="descImg" />
             </div>

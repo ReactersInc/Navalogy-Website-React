@@ -50,6 +50,8 @@
   cursor: pointer;
   border-radius: 50%;
   transition: var(--transition);
+  width: 35px;
+  height: 35px;
 }
 
 #leftChivron img,

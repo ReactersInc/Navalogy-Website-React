@@ -1,17 +1,18 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { ICONS } from '../../../assets'
 
 const Bubble = (props) => {
 
-    const { style, id } = props
+  const { style, id } = props
 
-    return (
-        <img 
-            id = {id}
-            src= {ICONS.bubble} 
-            alt="bubble" 
-            style = {style}
+  return (
+    <LazyLoadImage
+      src={ICONS.bubble}
+      alt="bubble"
+      id={id}
+      style={style} 
     />
-    
+
   )
 }
 

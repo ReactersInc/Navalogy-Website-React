@@ -3,6 +3,7 @@ import { ICONS, IMAGES } from "../../assets";
 import { HeroTitle, Project, ProjectDesc } from "../../components";
 import { projects } from '../../assets/data';
 import { useEffect, useState } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import './poerfolioPage.css'
 
 const PortfolioPage = () => {
@@ -54,7 +55,7 @@ const PortfolioPage = () => {
 
                     {project.long_description.map((desc, index) => (
                             <div className={`descImage descImage-${index + 1}`} key = {index}>
-                                <img src={desc.img} alt="descImg" />
+                                <LazyLoadImage src={desc.img} alt="desc-image" />
                             </div>
                     ))}
                 </div>

@@ -1,3 +1,4 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { IMAGES } from '../../assets'
 import Title from '../title/Title'
 
@@ -18,10 +19,10 @@ const HeroTitle = ({ logo, color1, color2, subtitle, title }) => {
             />
 
             <div className="grids">
-                <img src={IMAGES.grids_large} alt="grid-large" className="grid grid1" />
-                <img src={IMAGES.grids_large} alt="grid-large" className="grid grid2" />
-                <img src={IMAGES.grids_large} alt="grid-large" className="grid grid3" />
-                <img src={IMAGES.grids_large} alt="grid-large" className="grid grid4" />
+                <LazyLoadImage src={IMAGES.grids_large} alt="grid-large" className="grid grid1" />
+                <LazyLoadImage src={IMAGES.grids_large} alt="grid-large" className="grid grid2" />
+                <LazyLoadImage src={IMAGES.grids_large} alt="grid-large" className="grid grid3" />
+                <LazyLoadImage src={IMAGES.grids_large} alt="grid-large" className="grid grid4" />
             </div>
         </div>
     )
