@@ -8,28 +8,27 @@ const Layout = () => {
 
   useEffect(() => {
     const cursorDiv = document.getElementById('cursorDiv');
-    // console.log(location);
-    // console.log('Use Effect Called from Layout');
+    if (cursorDiv) {
+      const updatePosition = (e) => {
+        cursorDiv.style.top = e?.pageY + 'px';
+        cursorDiv.style.left = e?.pageX + 'px';
+      };
 
-    const updatePosition = (e) => {
-      cursorDiv.style.top = e?.pageY + 'px';
-      cursorDiv.style.left = e?.pageX + 'px';
-    };
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+      };
 
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
+      document.addEventListener('mousemove', updatePosition);
+      window.addEventListener('resize', handleResize);
 
-    document.addEventListener('mousemove', updatePosition);
-    window.addEventListener('resize', handleResize);
+      // Scroll to top of page on location change
+      window.scrollTo(0, 0);
 
-    // Scroll to top of page on location change
-    window.scrollTo(0, 0);
-
-    return () => {
-      document.removeEventListener('mousemove', updatePosition);
-      window.removeEventListener('resize', handleResize);
-    };
+      return () => {
+        document.removeEventListener('mousemove', updatePosition);
+        window.removeEventListener('resize', handleResize);
+      };
+    }
   }, [location]);
 
   const cursorDivStyle = {

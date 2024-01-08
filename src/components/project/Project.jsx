@@ -3,9 +3,9 @@ import { ICONS } from '../../assets';
 import { projects } from '../../assets/data';
 import { Button, Glare } from '../index';
 import { Link } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import './project.css';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Project = ({ setProject, project, page }) => {
 
@@ -19,7 +19,6 @@ const Project = ({ setProject, project, page }) => {
         }
     }, []);
 
-
     // Handle button click to filter projects
     const handleButtonClick = useCallback((projectType) => {
         setSelectedButton(projectType);
@@ -28,23 +27,21 @@ const Project = ({ setProject, project, page }) => {
 
 
     // Change project when clicking on the next or previous button
-    const changeProject = useCallback((e) => {
-        const { name } = e.target;
+    const changeProject = useCallback((direction) => {
         let id = project['id'];
 
-        if (name === 'prev') {
-            id = (id - 1) % Object.keys(projects).length;
+        if (direction === 'prev') {
+            id = id === 0 ? Object.keys(projects).length - 1 : id - 1;
         } else {
             id = (id + 1) % Object.keys(projects).length;
         }
 
-        animation();
-        setProject(projects[id])
-        setSelectedButton(project.type);
+        animation(); // Call the animation function
+        setProject(projects[id]);
+        setSelectedButton(projects[id].type);
     }, [project]);
 
-
-    // Animation for the project image
+    // Define the animation function
     const animation = () => {
         const projectImgContainer = document.querySelector('.projectImgContainer');
 
@@ -148,11 +145,11 @@ const Project = ({ setProject, project, page }) => {
                     />
 
                     <div className="controls">
-                        <div className='prevBtn control' onClick={changeProject} >
+                        <div className='prevBtn control' onClick={() => changeProject('prev')} >
                             <img src={ICONS.chevronUnFilled} alt="" />
                         </div>
 
-                        <div className='nextBtn control' onClick={changeProject} >
+                        <div className='nextBtn control' onClick={() => changeProject('next')} >
                             <img src={ICONS.chevronUnFilled} alt="" />
                         </div>
                     </div>
