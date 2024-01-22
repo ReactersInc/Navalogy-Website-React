@@ -9,7 +9,7 @@ const Footer = () => {
 
             <div id="footer">
                 <div className="main">
-                    <img src={ICONS.logo} alt="Navalogy Logo" className='logo' />
+                    <img src={ICONS.logo_white} alt="Navalogy Logo" className='logo' />
                     <h2>We Would Love <br /> to hear from you </h2>
                     <p>Feel free to reach out  if you want to collaborate with us, or simply have a chat</p>
 

@@ -15,6 +15,8 @@ import person from '../icons/person.png'
 
 
 import logo from '../icons/logo.png'
+import logo_black from '../icons/logo-black.png'
+import logo_white from '../icons/logo-white.png'
 import sun from '../icons/sun.png'
 import star from '../icons/star.png'
 import triangles from '../icons/triangles.png'
@@ -54,6 +56,8 @@ const ICONS = {
     person,
     
     logo,
+    logo_black,
+    logo_white,
     sun,
     star,
     triangles,

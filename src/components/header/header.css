@@ -27,8 +27,9 @@
 }
 
 #mainLogo img {
-    filter: invert(1);
-    width: 100%;
+    /* filter: invert(1); */
+    /* width: 100%; */
+    width: 100px;
     object-fit: cover;
 }
 
