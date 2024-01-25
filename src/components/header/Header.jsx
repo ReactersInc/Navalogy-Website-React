@@ -7,13 +7,11 @@ import './header.css'
 const Header = () => {
   return (
     <header id='header' >
-        <Link to="/" className="logoLink">
-            <div id="logoContainer">
+        <Link to="/" id="homeLink">
                 <div id="mainLogo">
                     <img src= {ICONS.logo_black} alt="./Navalogy-Logo"/> 
                 </div>
-                {/* <h2 id="logoText">Navalogy</h2>   */}
-            </div>
+                <h2 id="logoText">Navalogy</h2>  
         </Link>
 
         <div id="navLinks">

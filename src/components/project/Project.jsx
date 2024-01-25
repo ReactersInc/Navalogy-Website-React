@@ -10,6 +10,13 @@ import './project.css';
 const Project = ({ setProject, project, page }) => {
 
     const [selectedButton, setSelectedButton] = useState('All');
+    const [winWidth, setWinWidth] = useState(window.innerWidth);
+
+    const handleResize = () => {
+        setWinWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
 
     useEffect(() => {
         if (page === 'portfolioPage') {
@@ -102,47 +109,29 @@ const Project = ({ setProject, project, page }) => {
 
             <div id="content">
 
-                <div className="left">
-
-                    <div className="projectDetails">
-                        <h2>{title}</h2>
-                        <p className='text'>{description}</p>
-
-                        { 
-                            page === 'homePage' 
-                            &&
-                            <Link
-                                to={{ pathname: '/portfolio', }}
-                                state={{ project: project }}
-                                style={{ textDecoration: 'none' }}
-                            >
-                                <Button text='More Info' />
-                            </Link>
-                        }
-
-                    </div>
-
+                <div className="projectDetails">
+                    <h2>{title}</h2>
+                    <p className='text'>{description}</p>
+                    {
+                        page === 'homePage'
+                        &&
+                        <Link
+                            to={{ pathname: '/portfolio', }}
+                            state={{ project: project }}
+                            style={{ textDecoration: 'none' }}
+                        >
+                            <Button text='More Info' />
+                        </Link>
+                    }
                 </div>
 
-                <div className="right">
-
+                <div className="projectImage">
                     <div className="projectImgContainer">
                         <LazyLoadImage src={projectImg} alt="projectImg" className='projectImg' />
                     </div>
                     <h2>{title}</h2>
 
-                    <Glare
-                        style={{
-                            top: 0,
-                            left: 0,
-                            width: 'clamp(20rem, 40vw, 60rem)',
-                            height: '70%',
-                            transform: 'rotate(-24.784deg)',
-                            borderRadius: '80.59419rem',
-                            filter: 'blur(40px)',
-                            background: 'radial-gradient(62.17% 62.17% at 47.41% 54.69%, #FDD 27.6%, rgba(252, 252, 252, 0.08) 100%)',
-                        }}
-                    />
+                    <Glare type='type3' windowWidth = {winWidth} />
 
                     <div className="controls">
                         <div className='prevBtn control' onClick={() => changeProject('prev')} >

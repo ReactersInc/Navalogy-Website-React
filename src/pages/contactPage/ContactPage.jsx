@@ -272,13 +272,6 @@ const ContactPage = () => {
              />
 
 
-
-            {/* <div id= "imgContainer" >
-                <img src={IMAGES.contact_us_1} alt="" id="contactUsImg" />
-            </div> */}
-
-
-
         </div>
     )
 }

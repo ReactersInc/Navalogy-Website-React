@@ -4,22 +4,22 @@
 
 .projectContainer {
   width: 90%;
-  margin: 4rem auto;
+  margin: 0rem auto 4rem;
   background-color: var(--light);
-  padding-top: 2rem;
   position: relative;
   z-index: 0;
+  border: 1px solid transparent;
 }
 
 #projectDescriptions {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   max-width: 1200px;
-  margin: 4rem auto 15rem;
+  margin: 4rem auto;
   grid-template-areas:
-    "desc1 img3 desc2"
-    "img1 empty img2"
-    "desc3 img4 desc4";
+  "desc1 img3 desc2"
+  "img1 empty img2"
+  "desc3 img4 desc4";
 }
 
 .desc {
@@ -34,8 +34,8 @@
 }
 
 .descImage {
-  width: min(400px, 100%);
-  height: 300px;
+  width: min(350px, 100%);
+  height: 250px;
   background-color: #f2f0f2;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 8px;
@@ -76,18 +76,22 @@
 
 .descImage-1 {
   grid-area: img1;
+  justify-self: flex-start;
 }
 
 .descImage-2 {
   grid-area: img2;
+  justify-self: flex-end;
 }
 
 .descImage-3 {
   grid-area: img3;
+  justify-self: center;
 }
 
 .descImage-4 {
   grid-area: img4;
+  justify-self: center;
 }
 
 #grid1,
@@ -137,12 +141,27 @@
       "desc3 img3"
       "img4 desc4";
   }
+
+  .descImage-1, .descImage-3 {
+    justify-self: flex-end;
+  }
+
+  .descImage-2, .descImage-4 {
+    justify-self: flex-start;
+  }
+
+  .projectContainer #content{
+    gap: 0;
+  }
+
+  .projectContainer .text{
+    margin-bottom: 0;
+  }
+
+
 }
 
 @media screen and (max-width: 768px) {
-  .projectContainer {
-    margin: 0rem auto;
-  }
 
   #projectDescriptions {
     grid-template-columns: 1fr;
@@ -166,5 +185,9 @@
     margin-bottom: 2rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid var(--borderColor);
+  }
+
+  .descImage{
+    justify-self: center;
   }
 }

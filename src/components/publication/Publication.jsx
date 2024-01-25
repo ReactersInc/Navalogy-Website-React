@@ -20,9 +20,12 @@ const Publication = ({ icon, publicationTitle, publicationSubTitle, publicationD
         <>
             <div className='publication' onClick={() => setShow(!show)}>
 
-                <div className="iconContainer">
-                    <img src={icon} alt="icon" className='publicationIcon' />
-                </div>
+                {
+                    winWidth >= 480 &&
+                    <div className="iconContainer">
+                        <img src={icon} alt="icon" className='publicationIcon' />
+                    </div>
+                }
 
                 <div className='content' >
                     <div className='publicationTop'>

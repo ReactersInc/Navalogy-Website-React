@@ -49,6 +49,7 @@ import deekshith from '../images/members/deekshith.png'
 import dibya from '../images/members/dibya.png'
 import dilwar from '../images/members/dilwar.png'
 import dhritideepa from '../images/members/dhritideepa.png'
+import himanshu from '../images/members/himanshu.png'
 import kumarjit from '../images/members/kumarjit.png'
 import kunal from '../images/members/kunal.png'
 import n_medhi from '../images/members/medhi-sir.png'
@@ -127,6 +128,7 @@ const IMAGES = {
     dibya,
     dilwar,
     dhritideepa,
+    himanshu,
     kumarjit,
     kunal,
     n_medhi,

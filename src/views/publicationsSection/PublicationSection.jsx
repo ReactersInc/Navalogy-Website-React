@@ -47,17 +47,7 @@ const PublicationSection = () => {
         }
       </div>
 
-      <Glare
-        style={{
-          top: '100px',
-          width: '600px',
-          height: '200px',
-          borderRadius: '50%',
-          backgroundColor: 'var(--primary)',
-          background: 'radial-gradient(circle, rgba(238,174,212,1) 0%, rgba(211,180,219,1) 21%, rgba(148,191,233,1) 100%)',
-          filter: 'blur(60px)',
-        }}
-      />
+      <Glare type='type1'/>
 
       <Link 
         to={{ pathname: '/publication', }}

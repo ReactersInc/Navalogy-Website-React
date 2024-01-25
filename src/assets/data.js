@@ -474,9 +474,29 @@ const members = {
             ]
         },
 
-        // Name : Kumarjit Ray
+        // Name : Himanshu Sharma
         5: {
             id: 5,
+            img: IMAGES.himanshu,
+            name: "Himanshu Sharma",
+            role: "B.Tech 3rd Year CSE | Tezpur University",
+            bio: "Passionate about creating engaging experiences across web, mobile platforms, and game development. Eager to team up on dynamic projects, continually expanding skillset.",
+            socialLinks: [
+                {
+                    url: "https://github.com/IVYLIFE",
+                    icon: ICONS.github,
+                },
+                {
+                    url: "https://www.linkedin.com/in/himanshu-sharma-82723b229/",
+                    icon: ICONS.linkedln_2,
+                },
+
+            ],
+        },
+
+        // Name : Kumarjit Ray
+        6: {
+            id: 6,
             img: IMAGES.kumarjit,
             name: "Kumarjit Ray",
             role: "PhD Scholar | IIT Kharagpur | Former Asst. Prof. Siksha O Anusandhan",
@@ -490,8 +510,8 @@ const members = {
         },
 
         // Name : PraptiPriya Phukon
-        6: {
-            id: 6,
+        7: {
+            id: 7,
             img: IMAGES.praptipriya,
             name: "PraptiPriya Phukon",
             role: "B.Tech 3rd Year CSE | Tezpur University",
@@ -505,8 +525,8 @@ const members = {
         },
 
         // Name : Pratik Chanda
-        7: {
-            id: 7,
+        8: {
+            id: 8,
             img: IMAGES.pratik,
             name: "Pratik Chanda",
             role: "B.Tech 4th Year EE | Tezpur University",
@@ -520,8 +540,8 @@ const members = {
         },
 
         // Name : Pritindra Das
-        8: {
-            id: 8,
+        9: {
+            id: 9,
             img: IMAGES.pritindra,
             name: "Pritindra Das",
             role: "B.Tech 4th Year CSE | Tezpur University",
@@ -532,8 +552,8 @@ const members = {
         },
 
         // Name : Rajdeep Ghosh
-        9: {
-            id: 9,
+        10: {
+            id: 10,
             img: IMAGES.rajdeep,
             name: "Rajdeep Ghosh",
             role: "M.Tech CSE | Calcutta University",
@@ -547,8 +567,8 @@ const members = {
         },
 
         // Name : Rajveer Chaudhary
-        10: {
-            id: 10,
+        11: {
+            id: 11,
             img: IMAGES.rajveer,
             name: "Rajveer Chaudhary",
             role: "BTech CSE 3rd year | Tezpur University",
@@ -566,8 +586,8 @@ const members = {
         },
 
         // Name : Tanaya debnath
-        11: {
-            id: 11,
+        12: {
+            id: 12,
             img: IMAGES.tanaya,
             name: "Tanaya debnath",
             role: "B.Tech 3rd Year ECE | Tezpur University",
@@ -581,8 +601,8 @@ const members = {
         },
 
         // Name : Tanushree Das
-        12: {
-            id: 12,
+        13: {
+            id: 13,
             img: IMAGES.tanushree,
             name: "Tanushree Das",
             role: "B.Tech 4th Year CSE | Tezpur University",
@@ -596,8 +616,8 @@ const members = {
         },
 
         // Name : Tridib Lochan Dutta
-        13: {
-            id: 13,
+        14: {
+            id: 14,
             img: IMAGES.tridib,
             name: "Tridib Lochan Dutta",
             role: "B.Tech 3rd Year ECE | Tezpur University",
@@ -608,8 +628,8 @@ const members = {
         },
 
         // Name : Vicky Deka
-        14: {
-            id: 14,
+        15: {
+            id: 15,
             img: IMAGES.vicky,
             name: "Vicky Deka",
             role: "B.Tech 4th Year CSE | Tezpur University",
@@ -620,8 +640,8 @@ const members = {
         },
 
         // Name : Vivek
-        15: {
-            id: 15,
+        16: {
+            id: 16,
             img: IMAGES.vivek,
             name: "Vivek Rai",
             role: "B.Tech 3rd Year CSE | Tezpur University",

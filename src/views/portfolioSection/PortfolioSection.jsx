@@ -12,7 +12,7 @@ const PortfolioSection = () => {
   return (
     <div id='portfolioSection'>
 
-      <LazyLoadImage src={IMAGES.wave_2} style={{ objectFit: 'cover' }} />
+      <LazyLoadImage src={IMAGES.wave_2} style={{ objectFit: 'cover', marginBottom: '-55px' }} />
       <div id='portfolioContainer'>
         <Title
           title={{ emphasize: 'Innovation Showcase', remaining: '' }}
