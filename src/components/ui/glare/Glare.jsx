@@ -1,5 +1,5 @@
 import React from 'react';
-import './Glare.css'; // Import the CSS file
+import './glare.css'; 
 
 const Glare = ({ type }) => {
     return <div className={`glare ${type}`}></div>;
